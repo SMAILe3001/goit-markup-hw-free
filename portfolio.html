@@ -21,17 +21,17 @@
 	<body>
 		<!-- Шапка сайта -->
 		<header class="header">
-			<div class="container header-nav">
-				<a href="./index.html" class="logo link">Web<span class="logo__text">Studio</span></a>
+			<div class="container header__container">
+				<a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a>
 				<button type="button" class="menu-buttun js-open-menu">
-					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-						<use class="menu-buttun__icon--menu" href="./images/svg-icon.svg#icon-menu-open"></use>
+					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Відкриття мобільного меню">
+						<use href="./images/svg-icon.svg#icon-menu-open"></use>
 					</svg>
 				</button>
 				<div class="mobile-menu js-menu-container">
 					<button type="button" class="menu-buttun js-close-menu">
-						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-							<use class="menu-buttun__icon--cross" href="./images/svg-icon.svg#icon-menu-close"></use>
+						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Закриття мобільного меню">
+							<use href="./images/svg-icon.svg#icon-menu-close"></use>
 						</svg>
 					</button>
 					<nav class="site-nav">
@@ -65,18 +65,26 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="header__social list">
-						<li class="header__item"><a class="header__link link" href="#">Instagram</a> </li>
-						<li class="header__item"><a class="header__link link" href="#">Twitter</a></li>
-						<li class="header__item"><a class="header__link link" href="#">Facebook</a></li>
-						<li class="header__item"><a class="header__link link" href="#">LinkedIn</a></li>
+					<ul class="mobile-social list">
+						<li class="mobile-social__item">
+							<a class="mobile-social__link link" href="#">Instagram</a>
+						</li>
+						<li class="mobile-social__item">
+							<a class="mobile-social__link link" href="#">Twitter</a>
+						</li>
+						<li class="mobile-social__item">
+							<a class="mobile-social__link link" href="#">Facebook</a>
+						</li>
+						<li class="mobile-social__item">
+							<a class="mobile-social__link link" href="#">LinkedIn</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</header>
 		<!-- Мейн -->
 		<main>
-			<section class="section section--indent-top section--indent-botton">
+			<section class="section section__projects">
 				<div class="container">
 					<h1 class="is-hidden">Приклади робіт</h1>
 					<ul class="filters list">

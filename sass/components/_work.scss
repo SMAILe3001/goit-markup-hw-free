@@ -1,4 +1,6 @@
-.section-work {
+.section__work-list {
+	padding-top: 94px;
+	padding-bottom: 94px;
 	@media screen and (max-width: ($desktop-width - 1)) {
 		display: none;
 	}

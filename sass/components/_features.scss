@@ -1,6 +1,10 @@
-.section-feature-list {
+.section__feature-list {
+	padding-top: 60px;
 	@media screen and (max-width: ($desktop-width - 1)) {
 		padding-bottom: 60px;
+	}
+	@media screen and (min-width: $desktop-width) {
+		padding-top: 94px;
 	}
 }
 

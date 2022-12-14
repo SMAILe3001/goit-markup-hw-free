@@ -11,23 +11,3 @@
 		margin-bottom: 50px;
 	}
 }
-
-.section--indent-top {
-	padding-top: 60px;
-
-	@media screen and (min-width: $desktop-width) {
-		padding-top: 94px;
-	}
-}
-
-.section--indent-botton {
-	padding-bottom: 60px;
-
-	@media screen and (min-width: $desktop-width) {
-		padding-bottom: 94px;
-	}
-}
-
-.section--bagraund {
-	background: $portfolio-button;
-}
