@@ -113,3 +113,13 @@
 		transform: translate(0, 0) scale(1);
 	}
 }
+
+.adress-nav__link--mobil {
+	@media screen and (max-width: ($table-width - 1)) {
+		@include font(null, 34px, 40px, null);
+		color: #2196f3;
+	}
+	@media screen and (max-width: 376px) {
+		@include font(500, 24px, 28px, 0.02em);
+	}
+}

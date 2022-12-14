@@ -1,8 +1,10 @@
-.feature-list {
+.section-feature-list {
 	@media screen and (max-width: ($desktop-width - 1)) {
-		margin-bottom: 60px;
+		padding-bottom: 60px;
 	}
+}
 
+.feature-list {
 	@media screen and (min-width: $table-width) {
 		display: flex;
 		flex-wrap: wrap;
@@ -13,6 +15,9 @@
 .feature-list__item {
 	@media screen and (max-width: ($table-width - 1)) {
 		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
 	}
 
 	@media screen and (min-width: $table-width) {

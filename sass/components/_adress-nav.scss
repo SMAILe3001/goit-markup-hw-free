@@ -45,13 +45,6 @@
 	}
 }
 
-.adress-nav__link--mobil {
-	@media screen and (max-width: ($table-width - 1)) {
-		@include font(null, 34px, 40px, null);
-		color: #2196f3;
-	}
-}
-
 .adress-nav__icon {
 	margin-right: 10px;
 

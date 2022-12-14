@@ -12,26 +12,26 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		/>
+		/> -->
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<!-- Шапка сайта -->
 		<header class="header">
 			<div class="container header-nav">
-				<a href="./index.html" class="logo link">Web<span class="logo__text">Studio</span></a>
+				<a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a>
 				<button type="button" class="menu-buttun js-open-menu">
-					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-						<use class="menu-buttun__icon--menu" href="./images/svg-icon.svg#icon-menu-open"></use>
+					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Відкриття мобільного меню">
+						<use href="./images/svg-icon.svg#icon-menu-open"></use>
 					</svg>
 				</button>
 				<div class="mobile-menu js-menu-container">
 					<button type="button" class="menu-buttun js-close-menu">
-						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-							<use class="menu-buttun__icon--cross" href="./images/svg-icon.svg#icon-menu-close"></use>
+						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Закриття мобільного меню">
+							<use href="./images/svg-icon.svg#icon-menu-close"></use>
 						</svg>
 					</button>
 					<nav class="site-nav">
@@ -66,10 +66,18 @@
 						</li>
 					</ul>
 					<ul class="header__social list">
-						<li class="header__item"><a class="header__link link" href="#">Instagram</a> </li>
-						<li class="header__item"><a class="header__link link" href="#">Twitter</a></li>
-						<li class="header__item"><a class="header__link link" href="#">Facebook</a></li>
-						<li class="header__item"><a class="header__link link" href="#">LinkedIn</a></li>
+						<li class="header__item">
+							<a class="header__link link" href="#">Instagram</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link link" href="#">Twitter</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link link" href="#">Facebook</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link link" href="#">LinkedIn</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -77,16 +85,16 @@
 		<!-- Мейн -->
 		<main class="main">
 			<!-- Герой -->
-			<section class="hero">
+			<section class="section hero">
 				<div class="container">
 					<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 					<button data-modal-open type="button" class="button">Замовити послугу</button>
 				</div>
 			</section>
 			<!-- Особливості -->
-			<section class="section section--indent-top">
+			<section class="section section-feature-list section--indent-top">
 				<div class="container">
-					<h2 class="section__title hidden">Наші особливості</h2>
+					<h2 class="section__title is-hidden">Наші особливості</h2>
 					<ul class="feature-list list">
 						<li class="feature-list__item">
 							<div class="feature-list__content">
@@ -488,7 +496,7 @@
 		<footer class="footer">
 			<div class="container footer-container">
 				<div class="footer-contact">
-					<a href="./index.html" class="logo link">Web<span class="logo__text logo__text--inverse">Studio</span></a>
+					<a href="./index.html" class="logo link">Web<span class="logo--white">Studio</span></a>
 					<address class="address">
 						<ul class="address__list list">
 							<li class="address__item">
