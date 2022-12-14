@@ -1,0 +1,30 @@
+.social-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social-list__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: $social-icon;
+
+	transition-property: background, color;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-animation;
+
+	&:hover,
+	&:focus {
+		border-radius: 50%;
+		background: $accent-color;
+		color: $hero-color;
+	}
+}
+
+.social-list__icon {
+	fill: currentColor;
+}

@@ -1,0 +1,23 @@
+.logo {
+	color: $accent-color;
+
+	font-family: $fonts-second;
+	@include font(null, 24px, 28px, 0.03e);
+
+	@media screen and (max-width: ($table-width - 1)) {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		@include font(null, 26px, 31px, null);
+	}
+}
+
+.logo__text {
+	color: $logo-color;
+}
+
+.logo__text--inverse {
+	color: $hero-color;
+}

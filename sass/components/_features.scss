@@ -1,0 +1,50 @@
+.feature-list {
+	@media screen and (max-width: ($desktop-width - 1)) {
+		margin-bottom: 60px;
+	}
+
+	@media screen and (min-width: $table-width) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+}
+
+.feature-list__item {
+	@media screen and (max-width: ($table-width - 1)) {
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: $table-width) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+}
+
+.feature-list__content {
+	display: flex;
+	background-color: $portfolio-button;
+	justify-content: center;
+	border-radius: 4px;
+	padding: 25px 0px;
+	margin-bottom: 30px;
+}
+
+.feature-list__title {
+	color: $primary-text-color;
+	margin-bottom: 10px;
+
+	@include font(null, 14px, 16px, 0.03em);
+	text-transform: uppercase;
+
+	@media screen and (max-width: ($table-width - 1)) {
+		text-align: center;
+	}
+}
+
+.feature-list__text {
+	@include font(400, 14px, 24px, 0.03em);
+}

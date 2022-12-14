@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebStudio</title>
+		<link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<!-- Шапка сайта -->
+		<header class="header">
+			<div class="container header-nav">
+				<a href="./index.html" class="logo link">Web<span class="logo__text">Studio</span></a>
+				<button type="button" class="menu-buttun js-open-menu">
+					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+						<use class="menu-buttun__icon--menu" href="./images/svg-icon.svg#icon-menu-open"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu js-menu-container">
+					<button type="button" class="menu-buttun js-close-menu">
+						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+							<use class="menu-buttun__icon--cross" href="./images/svg-icon.svg#icon-menu-close"></use>
+						</svg>
+					</button>
+					<nav class="site-nav">
+						<ul class="site-nav__list list">
+							<li class="site-nav__item">
+								<a href="./index.html" class="site-nav__link link">Студія</a>
+							</li>
+							<li class="site-nav__item">
+								<a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфоліо</a>
+							</li>
+							<li class="site-nav__item">
+								<a href="#" class="site-nav__link link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="adress-nav list">
+						<li class="adress-nav__item">
+							<a href="mailto:info@devstudio.com" class="adress-nav__link link">
+								<svg class="adress-nav__icon" width="16" height="16">
+									<use href="./images/svg-icon.svg#icon-email"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
+						<li class="adress-nav__item">
+							<a href="tel:+380961111111" class="adress-nav__link adress-nav__link--mobil link">
+								<svg class="adress-nav__icon" width="16" height="16">
+									<use href="./images/svg-icon.svg#icon-phone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+					<ul class="header__social list">
+						<li class="header__item"><a class="header__link link" href="#">Instagram</a> </li>
+						<li class="header__item"><a class="header__link link" href="#">Twitter</a></li>
+						<li class="header__item"><a class="header__link link" href="#">Facebook</a></li>
+						<li class="header__item"><a class="header__link link" href="#">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- Мейн -->
+		<main>
+			<section class="section section--indent-top section--indent-botton">
+				<div class="container">
+					<h1 class="hidden">Приклади робіт</h1>
+					<ul class="filters list">
+						<li><button type="button" class="filters__button">Усі</button></li>
+						<li><button type="button" class="filters__button">Веб-сайти</button></li>
+						<li><button type="button" class="filters__button">Додатки</button></li>
+						<li><button type="button" class="filters__button">Дизайн</button></li>
+						<li><button type="button" class="filters__button">Маркетинг</button></li>
+					</ul>
+					<ul class="projects list">
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_1.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_1@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_1@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_1.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_1@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_1@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_1.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_1@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_1@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_1.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_1@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_1@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_1.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_1@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_1@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_1.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_1@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_1@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_1.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Технокряк</h2>
+								<p class="projects__desc">Веб-сайт</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_2.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_2@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_2@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_2.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_2@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_2@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_2.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_2@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_2@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_2.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_2@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_2@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_2.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_2@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_2@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_2.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_2@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_2@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_2.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia
+										iste fuga modi exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus
+										quibusdam dolore optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
+								<p class="projects__desc">Дизайн</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_3.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_3@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_3@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_3.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_3@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_3@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_3.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_3@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_3@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_3.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_3@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_3@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_3.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_3@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_3@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_3.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_3@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_3@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_3.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Ресторан Seafood</h2>
+								<p class="projects__desc">Додаток</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_4.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_4@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_4@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_4.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_4@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_4@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_4.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_4@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_4@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_4.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_4@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_4@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_4.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_4@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_4@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_4.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_4@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_4@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_4.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Проєкт Prime</h2>
+								<p class="projects__desc">Маркетинг</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_5.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_5@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_5@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_5.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_5@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_5@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_5.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_5@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_5@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_5.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_5@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_5@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_5.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_5@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_5@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_5.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_5@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_5@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_5.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Проєкт Boxes</h2>
+								<p class="projects__desc">Додаток</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_6.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_6@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_6@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_6.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_6@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_6@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_6.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_6@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_6@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_6.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_6@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_6@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_6.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_6@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_6@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_6.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_6@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_6@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_6.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Inspiration has no Borders</h2>
+								<p class="projects__desc">Веб-сайт</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_7.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_7@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_7@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_7.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_7@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_7@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_7.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_7@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_7@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_7.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_7@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_7@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_7.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_7@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_7@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_7.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_7@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_7@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_7.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Видання Limited Edition</h2>
+								<p class="projects__desc">Дизайн</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_8.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_8@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_8@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_8.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_8@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_8@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_8.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_8@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_8@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_8.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_8@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_8@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_8.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_8@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_8@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_8.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_8@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_8@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_8.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Проєкт LAB</h2>
+								<p class="projects__desc">Маркетинг</p>
+							</div>
+						</li>
+						<li class="projects__item">
+							<div class="projects__box">
+								<picture>
+									<source
+										srcset="
+											./images/desktop/portfolio/webp/pr-d_9.webp    1x,
+											./images/desktop/portfolio/webp/pr-d_9@2x.webp 2x,
+											./images/desktop/portfolio/webp/pr-d_9@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/desktop/portfolio/jpg/pr-d_9.jpg    1x,
+											./images/desktop/portfolio/jpg/pr-d_9@2x.jpg 2x,
+											./images/desktop/portfolio/jpg/pr-d_9@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/webp/pr-t_9.webp    1x,
+											./images/tablet/portfolio/webp/pr-t_9@2x.webp 2x,
+											./images/tablet/portfolio/webp/pr-t_9@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/tablet/portfolio/jpg/pr-t_9.jpg    1x,
+											./images/tablet/portfolio/jpg/pr-t_9@2x.jpg 2x,
+											./images/tablet/portfolio/jpg/pr-t_9@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/webp/pr-m_9.webp    1x,
+											./images/mobile/portfolio/webp/pr-m_9@2x.webp 2x,
+											./images/mobile/portfolio/webp/pr-m_9@3x.webp 3x
+										"
+										type="image/webp"
+									/>
+									<source
+										srcset="
+											./images/mobile/portfolio/jpg/pr-m_9.jpg    1x,
+											./images/mobile/portfolio/jpg/pr-m_9@2x.jpg 2x,
+											./images/mobile/portfolio/jpg/pr-m_9@3x.jpg 3x
+										"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+									<img
+										class="projects__img"
+										src="./images/mobile/portfolio/jpg/pr-t_9.jpg"
+										alt="Приклад виповненої роботи"
+									/>
+								</picture>
+								<div class="projects__overlay">
+									<p class="projects__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolore natus quia iste fuga modi
+										exercitationem commodi libero dolorem! Ut ipsam ipsa nulla ipsum eos necessitatibus quibusdam dolore
+										optio beatae.
+									</p>
+								</div>
+							</div>
+							<div class="projects__border">
+								<h2 class="projects__title">Growing Business</h2>
+								<p class="projects__desc">Додаток</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<!-- Футлер -->
+		<footer class="footer">
+			<div class="container footer-container">
+				<div class="footer-contact">
+					<a href="./index.html" class="logo link">Web<span class="logo__text logo__text--inverse">Studio</span></a>
+					<address class="address">
+						<ul class="address__list list">
+							<li class="address__item">
+								<a
+									class="address__link address__link--map link"
+									href="https://goo.gl/maps/967ExddVVpc8St2L9"
+									target="_blank"
+									>м. Київ, пр-т Лесі Українки, 26
+								</a>
+							</li>
+							<li class="address__item">
+								<a href="mailto:info@devstudio.com" class="address__link link">info@devstudio.com</a>
+							</li>
+							<li class="address__item">
+								<a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="footer-social">
+					<h2 class="footer-social__title">приєднуйтесь</h2>
+					<ul class="social-list list">
+						<li class="social-list__item">
+							<a class="social-list__link footer-social__link" href="#">
+								<svg class="social-list__icon" width="20" height="20">
+									<use href="./images/svg-icon.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link footer-social__link" href="#">
+								<svg class="social-list__icon" width="20" height="20">
+									<use href="./images/svg-icon.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link footer-social__link" href="#">
+								<svg class="social-list__icon" width="20" height="20">
+									<use href="./images/svg-icon.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a class="social-list__link footer-social__link" href="#">
+								<svg class="social-list__icon" width="20" height="20">
+									<use href="./images/svg-icon.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<h2 class="footer-subscribe__title">Підпишіться на розсилку</h2>
+					<form class="form-subscribe" name="subscribe">
+						<label class="form-subscribe__label">
+							<input type="email" name="subscribe" placeholder="E-mail" class="form-subscribe__input" />
+						</label>
+						<button type="submit" class="button">
+							<span class="button__text">
+								Підписатися
+								<svg class="button__icon" width="24" height="24">
+									<use href="./images/svg-icon.svg#icon-send"></use>
+								</svg>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/mobile-menu.js"></script>
+	</body>
+</html>

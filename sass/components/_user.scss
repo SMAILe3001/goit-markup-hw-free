@@ -1,0 +1,49 @@
+.user-list {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.user-list__item {
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	@media screen and (max-width: ($table-width - 1 )) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: $table-width) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+}
+
+.user-list__signature {
+	background: $hero-color;
+	border-radius: 0px 0px 4px 4px;
+	padding-top: 30px;
+	padding-bottom: 24px;
+
+	@media screen and (min-width: $desktop-width) {
+		padding-bottom: 30px;
+	}
+}
+
+.user-list__title {
+	color: $primary-text-color;
+	margin-bottom: 10px;
+
+	@include font(500, 16px, 19px, 0.03em);
+	text-align: center;
+}
+
+.user-list__desc {
+	margin-bottom: 16px;
+
+	@include font(400, 16px, 19px, 0.03em);
+	text-align: center;
+}

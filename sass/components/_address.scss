@@ -1,0 +1,33 @@
+.address {
+	margin-top: 20px;
+	font-style: normal;
+}
+
+.address__list {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+
+	@media screen and (min-width: $table-width) {
+		gap: 9px;
+	}
+}
+
+.address__link {
+	@include font(null, 14px, 24px, 0.03em);
+
+	color: $contact-color;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-animation;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.address__link--map {
+	color: $hero-color;
+}

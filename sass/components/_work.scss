@@ -1,0 +1,33 @@
+.section-work {
+	@media screen and (max-width: ($desktop-width - 1)) {
+		display: none;
+	}
+}
+
+.work-list {
+	display: flex;
+	margin-top: 50px;
+	gap: 30px;
+}
+
+.work-list__item {
+	flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-list__label {
+	position: relative;
+}
+
+.work-list__text {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: $label-text-background;
+
+	@include font(null, 14px, 16px, 0.03em);
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $hero-color;
+	padding: 27px 0px;
+}

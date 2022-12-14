@@ -1,0 +1,33 @@
+.section__title {
+	color: $primary-text-color;
+
+	@include font(null, 28px, 33px, 0.03em);
+	text-align: center;
+
+	margin-bottom: 30px;
+
+	@media screen and (min-width: $desktop-width) {
+		@include font(null, 36px, 42px, null);
+		margin-bottom: 50px;
+	}
+}
+
+.section--indent-top {
+	padding-top: 60px;
+
+	@media screen and (min-width: $desktop-width) {
+		padding-top: 94px;
+	}
+}
+
+.section--indent-botton {
+	padding-bottom: 60px;
+
+	@media screen and (min-width: $desktop-width) {
+		padding-bottom: 94px;
+	}
+}
+
+.section--bagraund {
+	background: $portfolio-button;
+}

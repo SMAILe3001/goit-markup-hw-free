@@ -1,0 +1,70 @@
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.projects__item {
+	transition-property: box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-animation;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
+
+	@media screen and (min-width: $table-width) {
+		width: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		width: calc((100% - 60px) / 3);
+	}
+}
+
+.projects__box {
+	position: relative;
+	overflow: hidden;
+}
+
+.projects__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: translateY(101%);
+	transition: transform 250ms ease;
+	background-color: $overlay-fon;
+	padding: 24px 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@include font(null, 18px, 28px, 0.03em);
+	color: $hero-color;
+	overflow: auto;
+}
+
+.projects__border {
+	padding: 20px 24px;
+
+	border-right: 1px solid $portfolio-border;
+	border-bottom: 1px solid $portfolio-border;
+	border-left: 1px solid $portfolio-border;
+}
+
+.projects__title {
+	margin-bottom: 4px;
+	color: $primary-text-color;
+
+	@include font(null, 18px, 36px, 0.06em);
+}
+
+.projects__desc {
+	@include font(400, 16px, 30px, 0.03em);
+}
+
+.projects__item:hover .projects__overlay {
+	transform: translateY(0);
+}

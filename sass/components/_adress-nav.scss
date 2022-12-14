@@ -1,0 +1,61 @@
+.adress-nav {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 32px;
+
+	@media screen and (max-width: ($table-width - 1)) {
+		margin-top: auto;
+	}
+
+	@media screen and (min-width: $table-width) {
+		flex-direction: column;
+		margin-left: auto;
+		gap: 10px;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		flex-direction: row;
+		align-items: center;
+		gap: 50px;
+	}
+}
+
+.adress-nav__link {
+	display: flex;
+	color: $title-text-color;
+	fill: currentColor;
+
+	@include font(500, 24px, 28px, 0.02em);
+
+	transition-property: color, fill;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-animation;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	@media screen and (min-width: $table-width) {
+		@include font(null, 12px, 14px, null);
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		@include font(null, 14px, 16px, null);
+	}
+}
+
+.adress-nav__link--mobil {
+	@media screen and (max-width: ($table-width - 1)) {
+		@include font(null, 34px, 40px, null);
+		color: #2196f3;
+	}
+}
+
+.adress-nav__icon {
+	margin-right: 10px;
+
+	@media screen and (max-width: ($table-width - 1)) {
+		display: none;
+	}
+}
