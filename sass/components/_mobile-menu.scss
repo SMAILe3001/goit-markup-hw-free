@@ -19,6 +19,9 @@
 		padding: 48px 40px;
 		z-index: 8;
 		height: 100vh;
+
+		flex-wrap: nowrap;
+		overflow: auto;
 	}
 
 	@media screen and (min-width: $table-width) {
