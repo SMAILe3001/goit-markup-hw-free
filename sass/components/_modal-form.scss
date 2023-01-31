@@ -91,6 +91,9 @@
 .modal-checkbox__text {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 
 	@include font(400, 14px, 24px, 0.03em);
 
@@ -118,6 +121,12 @@
 		transition-property: transform background-color border;
 		transition-duration: 250ms;
 		transition-timing-function: $timing-animation;
+		@media screen and (max-width: 362px) {
+			width: 40px;
+			height: 40px;
+			margin-bottom: 10px;
+			background-size: contain;
+		}
 	}
 }
 
